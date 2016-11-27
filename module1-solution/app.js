@@ -15,7 +15,7 @@
         var items = $scope.lunchMenu.split(',');
         var itemCount = 0;
         for(var i = 0; i < items.length; i++){
-          if(items[i]){
+          if(items[i] && items[i].trim()){
             itemCount++;
           }
         }
